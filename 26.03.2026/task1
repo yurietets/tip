@@ -1,0 +1,20 @@
+// Статическое приведение числовых типов
+#include <iostream>
+using namespace std;
+
+int main() {
+    int first = 67;
+    double second = 52.52;
+    float third = 1337.1337f;
+    char fourth = 'Z';
+    bool fifth = 1;
+    
+    cout << "int - double: " << first << " - " << static_cast<double>(first) << endl;
+    cout << "double - int: " << second << " - " << static_cast<int>(second) << endl;
+    cout << "double - float: " << second << " - " << static_cast<float>(second) << endl;
+    cout << "float - double: " << third << " - " << static_cast<double>(third) << endl;
+    cout << "char - int: " << fourth << " - " << static_cast<int>(fourth) << endl;
+    cout << "int - char: " << first << " - " << static_cast<char>(first) << endl;
+    cout << "bool - int: " << fifth << " - " << static_cast<int>(fifth) << endl;
+    cout << "int - bool: " << first << " - " << static_cast<bool>(first) << endl;
+}
