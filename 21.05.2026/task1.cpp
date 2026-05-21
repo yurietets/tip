@@ -24,7 +24,7 @@ int main() {
     int abCount = count_if(numbers.begin(), numbers.end(), [a, b](int x) { return x >= a && x <= b; });
     bool multiSeven = any_of(numbers.begin(), numbers.end(), [](int x) { return x % 7 == 0; });
     bool allUnder200 = all_of(numbers.begin(), numbers.end(), [](int x) { return abs(x) <= 200; });
-    cout << "сезультаты анализа \n";
+    cout << "результаты анализа \n";
     cout << "сумма всех элементов: " << sum << "\n";
     cout << "среднее арифметическое: " << average << "\n";
     cout << "минимальный элемент: " << minElement << "\n";
